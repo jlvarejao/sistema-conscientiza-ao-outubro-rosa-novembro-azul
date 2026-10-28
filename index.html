@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saúde em Foco</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎗️ Saúde em Foco</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#outubro">Outubro Rosa</a>
+            <a href="#novembro">Novembro Azul</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <h2>Cuidar da saúde é um ato de amor!</h2>
+
+            <p>
+                Conheça as campanhas Outubro Rosa e Novembro Azul
+                e descubra a importância da informação, da prevenção
+                e do acompanhamento profissional.
+            </p>
+
+            <a href="#outubro" class="botao">Começar a explorar</a>
+        </section>
+
+        <section id="outubro" class="cartao rosa">
+            <h2>🎀 Outubro Rosa</h2>
+
+            <h3>O que é o câncer de mama?</h3>
+
+            <p>
+                O câncer de mama ocorre quando células da mama
+                apresentam alterações e se multiplicam de maneira
+                descontrolada. Pode atingir diferentes pessoas,
+                embora seja muito mais frequente em mulheres.
+            </p>
+
+            <h3>Fatores de risco</h3>
+
+            <ul>
+                <li>Envelhecimento.</li>
+                <li>Histórico familiar e fatores genéticos.</li>
+                <li>Consumo de bebidas alcoólicas.</li>
+                <li>Sedentarismo e excesso de peso após a menopausa.</li>
+                <li>Alguns fatores hormonais e reprodutivos.</li>
+            </ul>
+
+            <h3>Sinais de alerta</h3>
+
+            <ul>
+                <li>Caroço na mama ou na região da axila.</li>
+                <li>Alterações no formato ou tamanho da mama.</li>
+                <li>Alterações na pele, como retração ou aspecto de casca de laranja.</li>
+                <li>Mudanças no mamilo ou saída espontânea de secreção.</li>
+            </ul>
+
+            <h3>Prevenção e diagnóstico</h3>
+
+            <p>
+                Manter hábitos saudáveis pode reduzir o risco.
+                Conhecer o próprio corpo ajuda a perceber alterações,
+                mas não substitui a avaliação profissional.
+                A mamografia pode ser indicada conforme a idade,
+                o histórico e as recomendações de saúde.
+            </p>
+
+            <p>
+                Ao perceber alterações suspeitas, procure uma unidade
+                de saúde para avaliação.
+            </p>
+        </section>
+
+        <section id="novembro" class="cartao azul">
+            <h2>🔵 Novembro Azul</h2>
+
+            <h3>O que é o câncer de próstata?</h3>
+
+            <p>
+                A próstata é uma glândula do sistema reprodutor masculino,
+                localizada abaixo da bexiga. O câncer de próstata ocorre
+                quando células dessa glândula se multiplicam de forma
+                descontrolada.
+            </p>
+
+            <h3>Fatores de risco</h3>
+
+            <ul>
+                <li>Envelhecimento.</li>
+                <li>Histórico familiar da doença.</li>
+                <li>Alguns fatores genéticos e hereditários.</li>
+            </ul>
+
+            <h3>Sinais de alerta</h3>
+
+            <p>
+                Nas fases iniciais, o câncer de próstata pode não
+                apresentar sintomas. Quando presentes, alguns sinais
+                podem incluir:
+            </p>
+
+            <ul>
+                <li>Dificuldade para urinar.</li>
+                <li>Jato urinário fraco ou interrompido.</li>
+                <li>Necessidade de urinar com maior frequência.</li>
+                <li>Sangue na urina ou no sêmen.</li>
+            </ul>
+
+            <h3>Prevenção e diagnóstico</h3>
+
+            <p>
+                Alimentação equilibrada, atividade física e outros
+                hábitos saudáveis contribuem para a saúde geral.
+                Não existe uma medida capaz de prevenir todos os casos.
+            </p>
+
+            <p>
+                A decisão sobre exames para investigar o câncer de
+                próstata deve considerar os benefícios, os riscos,
+                o histórico e as preferências da pessoa, em conversa
+                com um profissional de saúde.
+            </p>
+        </section>
+
+        <section class="cartao">
+            <h2>💡 Mitos e verdades</h2>
+
+            <details>
+                <summary>Todo caroço na mama é câncer?</summary>
+                <p>
+                    Mito. Existem diversas causas para caroços na mama.
+                    Porém, qualquer alteração suspeita deve ser avaliada
+                    por um profissional de saúde.
+                </p>
+            </details>
+
+            <details>
+                <summary>O câncer de próstata pode não apresentar sintomas?</summary>
+                <p>
+                    Verdade. A doença pode não causar sintomas nas fases
+                    iniciais, por isso a avaliação individual é importante.
+                </p>
+            </details>
+
+            <details>
+                <summary>Ter hábitos saudáveis elimina o risco de câncer?</summary>
+                <p>
+                    Mito. Hábitos saudáveis podem ajudar a reduzir riscos,
+                    mas não garantem que uma pessoa nunca desenvolverá câncer.
+                </p>
+            </details>
+        </section>
+
+        <section id="quiz" class="cartao quiz">
+            <h2>🧠 Quiz da Saúde</h2>
+
+            <p>
+                Responda às perguntas e teste seus conhecimentos
+                sobre as campanhas.
+            </p>
+
+            <div id="pergunta"></div>
+
+            <div id="alternativas"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="proximo" hidden>
+                Próxima pergunta
+            </button>
+
+            <div id="resultado" aria-live="polite"></div>
+
+            <button id="reiniciar" hidden>
+                Refazer quiz
+            </button>
+
+            <p id="recorde"></p>
+        </section>
+
+        <section class="aviso">
+            <h2>Importante</h2>
+
+            <p>
+                Este site tem finalidade educativa e não substitui
+                consultas, exames, diagnósticos ou orientações
+                individualizadas de profissionais de saúde.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Saúde em Foco | Projeto escolar de Desenvolvimento de Sistemas
+        </p>
+
+        <p>Informação e conscientização salvam vidas.</p>
+    </footer>
+
+</body>
+</html>
